@@ -15,6 +15,8 @@
   <link href="../paper-color-circle.html" rel="import">
   <link href="../paper-color-picker.html" rel="import">
   <link href="../paper-color-input.html" rel="import">
+  <link href="../paper-ink-input.html" rel="import">
+  <link href="../paper-ink-picker.html" rel="import">
 
   <style shim-shadowdom>
 
@@ -43,35 +45,41 @@
 
 </head>
 <body unresolved>
+<section>
+  <h1><code>&lt;paper-ink-input&gt;</code></h1>
+  <div style="width: 300px;">
+    <paper-ink-input value='{"red":255,"green":155,"blue":55,"alpha": 0.5}' shape="huebox" label="Color with hue picker and alpha" always-show-alpha allow-alpha></paper-ink-input>
+    <paper-ink-input value='{"red":255,"green":155,"blue":55,"alpha": 0.5}' preset-colors='["255,255,0,1","0,255,255,1"]' shape="huebox" label="Color with hue picker and alpha" always-show-alpha allow-alpha></paper-ink-input>
+  </div>
+</section>
+<section>
+  <h1><code>&lt;paper-color-input&gt;</code></h1>
+  <div style="width: 300px;">
+    <paper-color-input label="Pick a color..."></paper-color-input>
+    <paper-color-input value='{"red":255,"green":155,"blue":55}' label="My favourite color"></paper-color-input>
+    <paper-color-input value='{"red":255,"green":155,"blue":55}' shape="huebox" label="Color with hue picker"></paper-color-input>
+    <paper-color-input value='{"red":255,"green":155,"blue":55,"alpha": 0.5}' shape="huebox" label="Color with hue picker and alpha" always-show-alpha allow-alpha></paper-color-input>
+    <paper-color-input value='{"red":0,"green":255,"blue":0}' shape="huebox" label="Color with hue picker"></paper-color-input>
+    <paper-color-input value='{"red":12,"green":34,"blue":56}' shape="square" label="Color with square picker"></paper-color-input>
+    <paper-color-input value='{"red":12,"green":34,"blue":56}' shape="square" label="Input with [with-description]" with-description allow-alpha></paper-color-input>
+  </div>
+</section>
 
-  <section>
-    <h1><code>&lt;paper-color-input&gt;</code></h1>
-    <div style="width: 300px;">
-      <paper-color-input label="Pick a color..."></paper-color-input>
-      <paper-color-input value='{"red":255,"green":155,"blue":55}' label="My favourite color"></paper-color-input>
-      <paper-color-input value='{"red":255,"green":155,"blue":55}' shape="huebox" label="Color with hue picker"></paper-color-input>
-      <paper-color-input value='{"red":255,"green":155,"blue":55,"alpha": 0.5}' shape="huebox" label="Color with hue picker and alpha" always-show-alpha allow-alpha></paper-color-input>
-      <paper-color-input value='{"red":0,"green":255,"blue":0}' shape="huebox" label="Color with hue picker"></paper-color-input>
-      <paper-color-input value='{"red":12,"green":34,"blue":56}' shape="square" label="Color with square picker"></paper-color-input>
-      <paper-color-input value='{"red":12,"green":34,"blue":56}' shape="square" label="Input with [with-description]" with-description allow-alpha></paper-color-input>
-    </div>
-  </section>
+<section>
+  <h1><code>&lt;paper-color-circle&gt;</code></h1>
 
-  <section>
-    <h1><code>&lt;paper-color-circle&gt;</code></h1>
+  <a href="paper-color-circle.html" style="padding-left:20px;">See paper-color-circle.html</a>
 
-    <a href="paper-color-circle.html" style="padding-left:20px;">See paper-color-circle.html</a>
+</section>
 
-  </section>
+<section>
+  <h1><code>&lt;paper-color-picker&gt;</code></h1>
 
-  <section>
-    <h1><code>&lt;paper-color-picker&gt;</code></h1>
+  <br>
 
-    <br>
+  <a href="paper-color-picker.html" style="padding-left:20px;">See paper-color-picker.html</a>
 
-    <a href="paper-color-picker.html" style="padding-left:20px;">See paper-color-picker.html</a>
+</section>
 
-  </section>
-  
 </body>
 </html>
